@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Auto set location based on user</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Loaner Location</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   
+	var location = g_form.getValue('u_string_7');
+	if(location !==''){
+		return ;
+	}
+	
+	var city = g_scratchpad.city ;
+	var country = g_scratchpad.country; 
+	
+	if(city && country){
+		g_form.setValue('u_string_7',city+' '+country);
+	}
+	
+	else if(city){
+		g_form.setValue('u_string_7',city);
+	}
+	else if(country){
+		g_form.setValue('u_string_7',country);
+	}
+	
+	if(city || country){
+		g_form.showFieldMsg('u_string_7','Value updated automatically - You may override by editing','info');
+	}
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-20 10:52:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40533170f58ef1107f4474b6891ada0f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set Loaner Location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">4af83794f5c6b1107f4474b6891adafb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">4af83794f5c6b1107f4474b6891adafb</sys_scope>
+        <sys_update_name>sys_script_client_40533170f58ef1107f4474b6891ada0f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-20 11:14:36</sys_updated_on>
+        <table>x_cdltd_loaner_req_loaner_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
