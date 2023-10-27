@@ -19,6 +19,10 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="others" type="string"/>
+        <element label="Overdue Count" max_length="40" name="overdue_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Overdue Reminder" max_length="40" name="overdue_reminder" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Pick up Reminder" max_length="40" name="pick_up_reminder" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Return Reminder" max_length="40" name="return_reminder" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_glide_date_time_3" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_glide_date_time_4" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="Assigned to" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
