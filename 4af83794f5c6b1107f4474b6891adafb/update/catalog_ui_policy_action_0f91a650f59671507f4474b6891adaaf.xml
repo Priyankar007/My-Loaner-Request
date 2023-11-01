@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Loaner Request">485cde58f55671507f4474b6891ada2f</catalog_item>
+        <catalog_variable>IO:d05c9698f55671507f4474b6891adab1</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-31 11:02:34</sys_created_on>
+        <sys_id>0f91a650f59671507f4474b6891adaaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>others</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">4af83794f5c6b1107f4474b6891adafb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">4af83794f5c6b1107f4474b6891adafb</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_0f91a650f59671507f4474b6891adaaf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-31 11:02:34</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Only show other if deport is other ">ed712650f59671507f4474b6891ada04</ui_policy>
+        <variable>others</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
